@@ -1,0 +1,56 @@
+I want to propose to Thaer and BazookaJeff to make a #futures channel in masari discord where we can start a futures market,
+ and I'm looking for community input.
+If you have an idea of how this can be managed better, made safer, made sexier, please speak up.
+Here's the idea, as it would be stickied in the #futures channel:
+
+***
+
+#### What is a Futures Contract
+
+A futures contract is a legal agreement to buy or sell a particular commodity or asset at a predetermined price at a specified time in the future. Futures contracts are standardized for quality and quantity to facilitate trading on a futures exchange. The buyer of a futures contract is taking on the obligation to buy the underlying asset when the futures contract expires. The seller of the futures contract is taking on the obligation to provide the underlying asset at the expiration date. 
+
+https://www.investopedia.com/terms/f/futurescontract.asp
+
+
+### Here's how it works:
+
+Contracts expire weekly, Sunday at 23:59 UTC. Buyers and sellers will post in #futures and come to their agreements. Once that has happened, both parties will send the funds to SatoriNakamoto #9693 who will hold them in escrow. Upon contract expiry, the funds will be sent to the respective parties, less transaction fees. There is no fee for trading or escrow.
+
+Quoted currency is bitcoin but transactions will happen with Monero to allow for trading of single contracts. Final BTC / XMR rate will be taken from TradeOgre at the time of contract expiry.
+
+Contract size is 50 MSR. Buyer sends 120% of the purchase price of the position to account for fluctuations in XMR price. Excess XMR will be returned upon settling the contract, less transaction fees. 
+
+
+#### EXAMPLE 1:
+
+**Kafkathedog:** WTS (Want to sell) 1 contract @ 1500 sat.
+
+**girugamesh:** Yea man I'll buy that.
+
+(current XMR / BTC = 0.013)
+
+_Kafkathedog sends 50 MSR to SatoriNakamoto_
+
+_girugamesh sends 50 x 0.00001500 / 0.013 x 1.2 = 0.069230769 XMR to SatoriNakamoto_
+
+(XMR / BTC rate at contract expiry = 0.0135)
+
+After the following Sunday 23:59 UTC, SatoriNakamoto will send 50 MSR + 0.013675213 XMR refund to girugamesh and 0.055555556 XMR to Kafkathedog. Transaction fees are paid by the recipient.
+
+#### EXAMPLE 2:
+
+**JeuTheIdit:** WTB (Want to buy) 8 contracts @ 1100 sat.
+
+**camthegeek:** I'll sell you 6 contracts at that price.
+
+**JeuTheIdit:** Alright, let's do it.
+
+(current XMR / BTC = 0.013)
+
+_camthegeek sends 300 MSR to SatoriNakamoto_
+
+_JeuTheIdit sends 300 x 0.00001100 / 0.013 x 1.2= 0.304615385 XMR to SatoriNakamoto_
+
+(XMR / BTC rate at contract expiry = 0.0135)
+
+After the following Sunday 23:59 UTC, SatoriNakamoto will send 300 MSR + 0.060170941 XMR refund to JeuTheIdit and 0.244444444 XMR to camthegeek. Transaction fees are paid by the recipient.
